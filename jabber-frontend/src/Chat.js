@@ -12,9 +12,9 @@ import EditIcon from '@mui/icons-material/Edit';
 import Edit1 from './Edit1';
 import io from "socket.io-client";
 
-// const APILINK = "https://jabber-public-chatting-forum.onrender.com/api/v1/jabber/chat/";
-const APILINK = "http://localhost:8000/api/v1/jabber/chat/";
-const socket = io.connect("http://localhost:8000");
+
+const APILINK = "https://jabber-public-discussion-forum.onrender.com/api/v1/jabber/chat/";
+const socket = io.connect("https://jabber-public-discussion-forum.onrender.com");
 function Chat() {
   const [roomInfo, setRoomInfo] = useState([]);
   const { id } = useParams();

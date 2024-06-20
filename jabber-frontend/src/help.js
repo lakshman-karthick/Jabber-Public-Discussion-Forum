@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [showPopup, setShowPopup] = useState(false);
-  const APILINK = "http://localhost:8000/api/v1/jabber/contact";
+  const APILINK = "https://jabber-public-discussion-forum.onrender.com/api/v1/jabber/contact";
 
   const sendQuery = async (e) => {
     e.preventDefault();

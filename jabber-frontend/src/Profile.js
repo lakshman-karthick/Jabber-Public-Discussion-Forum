@@ -7,8 +7,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { useStateValue } from './StateProvider';
 
-// const APILINK = "https://jabber-public-chatting-forum.onrender.com/api/v1/jabber/chat/";
-const APILINK = "http://localhost:8000/api/v1/jabber/chat/";
+const APILINK = "https://jabber-public-discussion-forum.onrender.com/api/v1/jabber/chat/";
 
 function Profile({listRoom}) {
   const { rooms, setRooms,setRoomFlag,roomFlag } = listRoom;

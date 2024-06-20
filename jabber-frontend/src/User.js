@@ -3,8 +3,7 @@ import Axios from 'axios';
 import SearchIcon from '@mui/icons-material/Search';
 import SidebarUser from './SidebarUser';
 import { useStateValue } from './StateProvider';
-// const APILINK = "https://jabber-public-chatting-forum.onrender.com/api/v1/jabber/chat";
-const APILINK = "http://localhost:8000/api/v1/jabber/chat/";
+const APILINK = "https://jabber-public-discussion-forum.onrender.com/api/v1/jabber/chat/";
 
 function User({ listRoom }) {
   const { rooms, setRooms,setRoomFlag,roomFlag } = listRoom;

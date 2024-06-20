@@ -12,7 +12,7 @@ function AddNewChat(props) {
 
     const createChat = (e) => {
         e.preventDefault();
-        Axios.post('http://localhost:8000/api/v1/jabber/chat/', {
+        Axios.post('https://jabber-public-discussion-forum.onrender.com/api/v1/jabber/chat/', {
             roomName: roomName,
             creatorName: creatorName,
             creatorEmail: CreatorEmail,

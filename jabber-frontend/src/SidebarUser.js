@@ -1,9 +1,8 @@
 // SidebarUser.js
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Avatar, IconButton } from '@material-ui/core';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
+import { Avatar } from '@material-ui/core';
+
 
 function SidebarUser({ id, name, image }) {
   return (
@@ -12,7 +11,6 @@ function SidebarUser({ id, name, image }) {
         <Avatar src={image} />
         <div className="ml-4 flex-1">
           <h3 className="text-white text-base mb-2">{name}</h3>
-          {/* <p className="text-gray-400 text-sm">{messages[0]?.Message}</p> */}
         </div>
         
       </div>
