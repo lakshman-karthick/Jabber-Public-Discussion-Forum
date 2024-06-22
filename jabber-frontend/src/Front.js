@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsCard from './NewsCard'; // Import the NewsCard component
 
-const API_URL = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=0c5a949317234d4e94536fcac1cfc1ac';
+const API_URL = 'https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=in&max=10&apikey=791b06c4a1693382a8740e2d95b64f8c';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     axios.get(API_URL)
       .then(response => {
-        const filteredArticles = response.data.articles.filter(article => article.urlToImage && article.description);
+        const filteredArticles = response.data.articles.filter(article => article.image && article.description);
         setNews(filteredArticles);
 
       })
